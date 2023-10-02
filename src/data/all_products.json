@@ -4,7 +4,8 @@
     { "name": "Всі товари", "id": "all" },
     { "name": "Сумка поясна", "id": "bags" },
     { "name": "Кросс-боді", "id": "crossbody" },
-    { "name": "Чохли", "id": "cover" }
+    { "name": "Чохли", "id": "cover" },
+    { "name": "Гаманці", "id": "wallet" }
   ],
   "button": {
     "loadmore": "Завантажити ще",
