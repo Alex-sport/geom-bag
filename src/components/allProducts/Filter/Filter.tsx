@@ -27,14 +27,16 @@ const Filter = ({ filters, setPageCount, setDisabled }: FilterProps) => {
   };
 
   return (
-    <ul className="grid smOnly:grid-cols-4 md:grid-cols-5 xl:w-[800px] mx-auto mb-5 md:mb-10 gap-y-2">
+    <ul className="grid  smOnly:auto-rows-min	 md:grid-cols-5 xl:w-[800px] mx-auto mb-5 md:mb-10 gap-y-2">
       {filters.map((item: FiltersProps, ind: number) => {
         return (
           <Button
             onClick={handleClick}
             variant="simple"
             key={ind}
-            className={`${ind === 0 ? 'smOnly:col-start-1 smOnly:col-end-5 ' : ''} !px-2 mx-auto ${
+            className={`${
+              ind === 0 ? 'smOnly:col-start-1 smOnly:col-end-5 ' : ''
+            } smOnly:!px-1 !px-2 mx-auto ${
               current === item.id ? '!border-dark' : '!border-transparent'
             }`}
           >
