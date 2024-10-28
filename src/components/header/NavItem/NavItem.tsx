@@ -20,9 +20,7 @@ export const NavItem: FC<NavItemProps> = ({ list }) => {
           >
             <LinkButton
               href={
-                pathname !== '/' && item.id === '/?contacts=true'
-                  ? `${pathname}${item.url}`
-                  : item.url
+                pathname !== '/' && item.id === 'contacts' ? `${pathname}${item.url}` : item.url
               }
               variant="simple"
               offset={item.offset}
