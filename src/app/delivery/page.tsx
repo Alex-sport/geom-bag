@@ -19,7 +19,7 @@ export async function generateMetadata(): Promise<Metadata> {
   const data: DeliveryProps = (await getDeliverypageContent()) as DeliveryProps;
   const seo = data?.deliverypage?._seoMetaTags || pageData.seo;
   const favicon = data.site.favicon || FaviconImg;
-  return toNextMetadata([...seo, ...favicon] || []);
+  return toNextMetadata([...seo, ...favicon]);
 }
 
 const getFilteredContent = (data: AllSectionDeliverypagesProps[], name: string) => {

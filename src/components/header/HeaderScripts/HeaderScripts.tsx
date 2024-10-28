@@ -4,8 +4,7 @@ import { useEffect } from 'react';
 
 export const HeaderScripts = () => {
   const searchParams = useSearchParams();
-
-  const search_contacts = searchParams.get('contacts');
+  const search_contacts = searchParams?.get('contacts');
 
   useEffect(() => {
     if (search_contacts === 'true') {
