@@ -24,7 +24,7 @@
     {
       "name": "Контакти",
       "url": "/?contacts=true",
-      "id": "/?contacts=true",
+      "id": "contacts",
       "scroll": true,
       "offset": -140
     }
