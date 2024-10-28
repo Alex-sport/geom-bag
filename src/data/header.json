@@ -2,28 +2,28 @@
   "nav": [
     {
       "name": "Всі товари",
-      "url": "/#all_products",
-      "id": "all_products",
+      "url": "/?groupFilter=all",
+      "id": "/?groupFilter=all",
       "scroll": true,
       "offset": -80
     },
     {
       "name": "Новинки",
-      "url": "/#new_products",
-      "id": "new_products",
+      "url": "/?new_products=true",
+      "id": "/?new_products=true",
       "scroll": true,
       "offset": -80
     },
     {
       "name": "Доставка",
-      "url": "/#delivery",
+      "url": "/delivery",
       "id": "delivery",
       "scroll": false,
       "offset": -80
     },
     {
       "name": "Контакти",
-      "url": "/#contacts",
+      "url": "/?contacts=true",
       "id": "contacts",
       "scroll": true,
       "offset": -140

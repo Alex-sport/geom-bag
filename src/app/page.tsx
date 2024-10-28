@@ -43,6 +43,7 @@ const Home = async ({
     searchId: string;
     isModalOpen: string;
     orderModal: string;
+    new_products: string;
   };
 }) => {
   const data: HomeQueryData = (await getHomepageContent()) as HomeQueryData;
@@ -57,6 +58,7 @@ const Home = async ({
   const searchId = searchParams.searchId;
   const isModalOpen = searchParams.isModalOpen;
   const orderModal = searchParams.orderModal;
+  const new_products = searchParams.new_products;
 
   return (
     <main className="">
@@ -64,7 +66,7 @@ const Home = async ({
         <Hero {...heroData} />
       </Section>
       <Section variant="primary" id="new_products">
-        <NewProduct data={productData} />
+        <NewProduct data={productData} new_products={new_products === 'true'} />
       </Section>
       <Section variant="colored" id="advantages" className="advantages">
         <Advantages data={advantagesData} />

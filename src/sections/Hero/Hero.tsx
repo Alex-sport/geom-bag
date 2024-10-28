@@ -1,12 +1,11 @@
-import LinkButton from '@/components/button/LinkButton';
 import Paragraph from '@/components/typography/Paragraph';
 import Title from '@/components/typography/Title';
 
 import Image from 'next/image';
 import { Image as DatoImage } from 'react-datocms';
 
-import d from '@/data/hero.json';
-
+import LinkButton from '@/components/button/LinkButton';
+import { routes } from '@/utils/routs';
 import { HeroProps } from './Hero.props';
 
 const Hero = (data: HeroProps) => {
@@ -68,11 +67,9 @@ const Hero = (data: HeroProps) => {
             {subtitle}
           </Paragraph>
           <LinkButton
-            scroll
-            href={d.button.href}
+            href={`${routes.HOME}/?groupFilter=all`}
             variant="secondary"
-            offset={-80}
-            className=" smOnly:mx-auto"
+            className=" smOnly:mx-auto justify-center"
           >
             {buttonText}
           </LinkButton>
