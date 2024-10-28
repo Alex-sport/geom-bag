@@ -19,10 +19,13 @@ export const NavItem: FC<NavItemProps> = ({ list }) => {
             }`}
           >
             <LinkButton
-              href={pathname === '/' || item.id === 'contacts' ? item.id : item.url}
+              href={
+                pathname !== '/' && item.id === '/?contacts=true'
+                  ? `${pathname}${item.url}`
+                  : item.url
+              }
               variant="simple"
               offset={item.offset}
-              scroll={pathname === '/' || item.id === 'contacts' ? item.scroll : !item.scroll}
               className="smOnly:mx-auto"
             >
               {item.name}
