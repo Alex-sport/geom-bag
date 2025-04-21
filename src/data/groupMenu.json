@@ -3,8 +3,8 @@
   "group": [
     { "name": "Сумки поясні", "id": "bags" },
     { "name": "Кросс-боді", "id": "crossbody" },
-    { "name": "Чохли для акустики", "id": "cover" },
     { "name": "Гаманці, органайзери", "id": "wallet" },
-    { "name": "Рюкзаки", "id": "backpack" }
+    { "name": "Рюкзаки", "id": "backpack" },
+    { "name": "Ключниці", "id": "keyholder" }
   ]
 }

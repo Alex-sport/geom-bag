@@ -40,8 +40,8 @@ const Hero = (data: HeroProps) => {
           </div>
           <div className=" basis-5/12 relative overflow-hidden">
             <Image
-              src={image[2].url}
-              alt={image[2].alt || ''}
+              src={image[2]?.url}
+              alt={image[2]?.alt || ''}
               fill
               sizes="50vw"
               priority={true}
