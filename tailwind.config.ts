@@ -46,6 +46,7 @@ const config: Config = {
       fontFamily: {
         sans: ['Noto_Sans', 'sans-serif'],
         montserrat: ['Montserrat', 'sans-serif'],
+        syncopate: ['Syncopate', 'sans-serif'],
       },
     },
   },
