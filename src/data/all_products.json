@@ -3,7 +3,7 @@
   "filter": [
     { "name": "Всі товари", "id": "all" },
     { "name": "Сумки поясні", "id": "bags" },
-    { "name": "Кросс-боді", "id": "crossbody" },
+    { "name": "Крос-боді", "id": "crossbody" },
     { "name": "Гаманці, органайзери", "id": "wallet" },
     { "name": "Рюкзаки", "id": "backpack" },
     { "name": "Ключниці", "id": "keyholder" }
