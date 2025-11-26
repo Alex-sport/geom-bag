@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&display=swap');
 
-
 @import '~slick-carousel/slick/slick.css';
 @import '~slick-carousel/slick/slick-theme.css';
 @tailwind base;
@@ -102,14 +101,14 @@ main {
   }
 }
 #header.no-visible #logo-desktop {
-  transform: scale(0.7);
-
   @media screen and (min-width: 768px) {
-    top: 40px;
+    transform: scale(0.7);
+    top: 75px;
   }
 
   @media screen and (min-width: 1280px) {
-    top: 36px;
+    transform: scale(1);
+    top: 65px;
   }
 }
 
@@ -1071,7 +1070,7 @@ main {
 }
 
 /*start Logo style*/
-.logo {
+/* .logo {
   position: relative;
   overflow: hidden;
   clip-path: polygon(
@@ -1087,13 +1086,13 @@ main {
 
     101% 100%
   );
-}
+} */
 
 .logo:hover {
   scale: 1.02;
   transition: 0.5s;
 }
-
+/* 
 .logo::before {
   content: '';
   position: absolute;
@@ -1102,14 +1101,14 @@ main {
   width: 1.5em;
   height: 100%;
   background-color: #fff;
-  /* opacity: 0; */
+  opacity: 0;
   transform: translateX(-1em) skewX(143deg);
-}
+} */
 
-.logo:hover::before {
+/* .logo:hover::before {
   animation: move-light 1s infinite ease-in-out;
-  /* transform: translateX(12em) skewX(143deg); */
-}
+  transform: translateX(12em) skewX(143deg);
+} */
 
 @keyframes move-light {
   0% {
