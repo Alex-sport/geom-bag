@@ -3,6 +3,9 @@ module.exports = {
   images: {
     domains: ['www.datocms-assets.com'],
   },
+  // experimental: {
+  //   missingSuspenseWithCSRBailout: false,
+  // },
   webpack(config) {
     const fileLoaderRule = config.module.rules.find(rule => rule.test?.test?.('.svg'));
     config.module.rules.push(

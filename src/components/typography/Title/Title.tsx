@@ -13,7 +13,7 @@ const Title: FC<TitleProps> = ({ tag = 'h2', variant = 'dark', centered, childre
           ['text-center']: centered,
           ['text-dark']: variant == 'dark',
           ['text-white']: variant == 'light',
-          ['font-montserrat font-semibold text-40  md:text-[60px]']: tag == 'h1',
+          ['font-syncopate text-40  md:text-[60px]']: tag == 'h1',
           ['font-normal text-center text-xl md:text-40 mb-8 md:mb-10']: tag == 'h2',
           ['font-normal text-xl md:text-3xl ']: tag == 'h3',
         },

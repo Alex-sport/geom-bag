@@ -2,10 +2,10 @@ import { routes } from '@/utils/routs';
 import cn from 'classnames';
 import Link from 'next/link';
 import { FC } from 'react';
-import LogoImg from '../../../public/logo.svg';
+import LogoImg from '../../../public/logo_new_full.svg';
 import { LogoProps } from './Logo.props';
 
-const Logo: FC<LogoProps> = ({ sticky, width = 140, height = 94, className }) => {
+const Logo: FC<LogoProps> = ({ sticky, width = 190, height = 36, className }) => {
   return (
     <Link
       href={routes.HOME}

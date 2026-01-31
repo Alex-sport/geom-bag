@@ -1,7 +1,20 @@
 'use client';
+import { useSearchParams } from 'next/navigation';
 import { useEffect } from 'react';
 
 export const HeaderScripts = () => {
+  const searchParams = useSearchParams();
+  const search_contacts = searchParams?.get('contacts');
+
+  useEffect(() => {
+    if (search_contacts === 'true') {
+      const element = document.getElementById('contacts');
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  }, [search_contacts]);
+
   useEffect(() => {
     let lastScrollTop = 0;
     const scrollThreshold = 80;

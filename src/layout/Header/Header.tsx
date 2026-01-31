@@ -9,6 +9,7 @@ import { HeaderScripts } from '@/components/header/HeaderScripts/HeaderScripts';
 import MobileHeader from '@/components/header/MobileHeader';
 import { Navigation } from '@/components/header/Navigation';
 import header from '@/data/header.json';
+import { Suspense } from 'react';
 
 const Header = ({ contacts }: ContactsListProps) => {
   const items = header.nav as ItemProps[];
@@ -18,14 +19,16 @@ const Header = ({ contacts }: ContactsListProps) => {
       id="header"
       className={`left-0 top-0 z-[20]  flex h-[80px] md:h-[150px] w-full items-center transition-all fixed bg-white  backdrop-blur-[3px]  '`}
     >
-      <HeaderScripts />
+      <Suspense fallback={<div>Loading...</div>}>
+        <HeaderScripts />
+      </Suspense>
       <div
         id="header-thumb"
         className="w-full h-full z-[100]  flex items-center border-b-[1px] border-solid border-white_gray"
       >
         <div className="container relative smOnly:hidden">
           <ContactsList contacts={contacts} />
-          <Logo className="!block md:absolute md:top-10 xl:top-4 md:inset-x-0 mdOnly:scale-[0.69]	m-auto" />
+          <Logo className="!block md:absolute md:top-[75px] xl:top-[55px] md:inset-x-0 mdOnly:scale-[0.69]	m-auto" />
           <NavList list={items} />
         </div>
         <MobileHeader />

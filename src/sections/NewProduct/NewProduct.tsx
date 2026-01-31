@@ -1,5 +1,5 @@
 'use client';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 import { ProductCardProp } from '@/app/page.props';
 import ProductsList from '@/components/newProducts/ProductsList';
@@ -20,12 +20,21 @@ const getTopProducts = (data: ProductCardProp[]) => {
   return newData;
 };
 
-const NewProduct = ({ data }: NewPropductsProps) => {
+const NewProduct = ({ data, new_products }: NewPropductsProps) => {
   const newProduct = getNewProducts(data);
   const topProduct = getTopProducts(data);
 
   const [products, setProducts] = useState(newProduct);
   const [mode, setMode] = useState(true);
+
+  useEffect(() => {
+    if (new_products) {
+      const element = document.getElementById('new_products');
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  }, [new_products]);
 
   const handleNewClick = () => {
     setProducts(newProduct);

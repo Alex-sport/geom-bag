@@ -3,10 +3,10 @@
   "filter": [
     { "name": "Всі товари", "id": "all" },
     { "name": "Сумки поясні", "id": "bags" },
-    { "name": "Кросс-боді", "id": "crossbody" },
-    { "name": "Чохли для акустики", "id": "cover" },
+    { "name": "Крос-боді", "id": "crossbody" },
     { "name": "Гаманці, органайзери", "id": "wallet" },
-    { "name": "Рюкзаки", "id": "backpack" }
+    { "name": "Рюкзаки", "id": "backpack" },
+    { "name": "Ключниці", "id": "keyholder" }
   ],
   "button": {
     "loadmore": "Завантажити ще",
