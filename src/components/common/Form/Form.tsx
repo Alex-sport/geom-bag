@@ -80,6 +80,13 @@ const Form = ({ orderName, price, setIsNotificationOpen }: FormProps) => {
               errors={errors}
               options={fieldsParams[field.name as keyof typeof fieldsParams]}
             />
+            {field.name === 'phone' && (
+              <Paragraph variantFontSize="reviewers" className="text-xs md:text-sm ">
+                <span className="font-semibold">Важливо:</span> номер має бути зареєстрований у
+                месенджерах. <br />
+                Ми використовуємо їх для зв&apos;язку з вами
+              </Paragraph>
+            )}
           </div>
         ))}
         <Button type="submit" className="mx-auto mt-4" disabled={isSending ? true : false}>
