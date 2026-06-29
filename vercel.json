@@ -1,0 +1,9 @@
+{
+  "redirects": [
+    {
+      "source": "/(.*)",
+      "destination": "https://geombags.com/uk",
+      "permanent": true
+    }
+  ]
+}
